@@ -4,3 +4,6 @@
 build
 src/**/*.txt
 local.properties
+
+# AOC Input files
+inputs/

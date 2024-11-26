@@ -1,11 +1,22 @@
 plugins {
     kotlin("jvm") version "2.0.21"
+    application
 }
 
-sourceSets {
-    main {
-        kotlin.srcDir("src")
-    }
+val reflectionsVersion = "0.10.2"
+val jsoupVersion = "1.18.1"
+
+dependencies {
+    implementation("org.reflections:reflections:$reflectionsVersion")
+    implementation("org.jsoup:jsoup:$jsoupVersion")
+}
+
+kotlin {
+    jvmToolchain(21)
+}
+
+application {
+    mainClass = "MainKt"
 }
 
 tasks {
