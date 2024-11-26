@@ -1,5 +1,6 @@
 package days
 
+@Suppress("unused")
 object Day01 : DaySolver {
     override val day = 1
     override val part = PuzzlePart.TWO

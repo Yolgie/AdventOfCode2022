@@ -1,8 +1,11 @@
 package days
 
+
+@Suppress("unused")
 object Day02 : DaySolver {
     override val day = 2
-    override val part = PuzzlePart.TWO
+    override val part: PuzzlePart
+        get() = sampleTestCases.map{it.part}.maxBy { it.levelNumber }
 
     override val sampleTestCases: List<TestCase> = listOf(
         TestCase(

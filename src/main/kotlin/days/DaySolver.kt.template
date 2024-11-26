@@ -1,0 +1,37 @@
+package days
+
+@Suppress("unused")
+object Day{{DAY}} : DaySolver {
+    override val day = {{DAY_AS_NUMBER}}
+    override val part: PuzzlePart
+        get() = sampleTestCases.map{it.part}.maxBy { it.levelNumber }
+
+    override val sampleTestCases: List<TestCase> = listOf(
+        TestCase(
+            part = PuzzlePart.ONE,
+            input = """
+                XXX
+            """.trimIndent(),
+            expectedOutput = "XXX"
+        ),
+//        TestCase(
+//            part = PuzzlePart.TWO,
+//            input = """
+//                XXX
+//            """.trimIndent(),
+//            expectedOutput = "XXX"
+//        )
+    )
+
+    override fun solvePartOne(input: String): String {
+        val solution = input.lines()
+
+        return solution.toString()
+    }
+
+    override fun solvePartTwo(input: String): String {
+        val solution = input.lines()
+
+        return solution.toString()
+    }
+}

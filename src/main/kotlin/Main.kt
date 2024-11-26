@@ -1,14 +1,13 @@
 import Submitter.submitAnswer
-import days.Day02
 import days.DaySolver
 
 fun main() {
     val year = 2022
-    val solver = Day02
-    val day = solver.day
+    val day = 5
     require(day in 1..25) { "Invalid day: $day. Advent of Code days are from 1 to 25." }
 
     val input = InputDownloader.getInput(year, day)
+    val solver = GenerateDaySolver.generate(day)
     val testResult = runTests(solver)
     val result = solver.part.selectorFunction.invoke(solver, input)
     println("Day $day Result: $result")

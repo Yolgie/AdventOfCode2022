@@ -10,9 +10,9 @@ Contains:
   - flag in file what to solve for
 - generic sample input by defining constants (lists for multiple) in the solution instead of having to create files for that.
 - submit automatically if flag in file is set and tests run through
+- Automatically generate the file for the day from a template if it does not exist already.
 
 Ideas: 
-- Automatically generate the file for the day from a template if it does not exist already.
 - run the tests automatically for the sample input on change in file
 - for autosubmit show nice error message in log if fail or open browser if success
 
