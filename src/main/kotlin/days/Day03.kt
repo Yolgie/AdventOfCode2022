@@ -1,6 +1,7 @@
 package days
 
 import Utils.filterNotBlank
+import Utils.splitAtHalf
 
 @Suppress("unused")
 object Day03 : DaySolver {
@@ -72,15 +73,4 @@ object Day03 : DaySolver {
 
         return solution.toString()
     }
-
-    fun String.splitAt(index: Int): Pair<String, String> {
-        require(index in 0..this.length) { "Index out of bounds" }
-        return Pair(this.substring(0, index), this.substring(index))
-    }
-
-    fun String.splitAtHalf(): Pair<String, String> {
-        val mid = (this.length + 1) / 2
-        return splitAt(mid)
-    }
-
 }
