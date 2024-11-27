@@ -3,7 +3,7 @@ import days.DaySolver
 
 fun main() {
     val year = 2022
-    val day = 5
+    val day = 6
     require(day in 1..25) { "Invalid day: $day. Advent of Code days are from 1 to 25." }
 
     val input = InputDownloader.getInput(year, day)
